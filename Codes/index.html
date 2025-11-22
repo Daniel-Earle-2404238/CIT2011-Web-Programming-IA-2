@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inwell Book Store</title>
+        <link rel="stylesheet" href="../style.css"> 
+        <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Assets/favicon-16x16.png">
+        <link rel="manifest" href="../Assets/site.webmanifest">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="..." crossorigin="anonymous" />
+    </head>
+
+    <body>
+        <div class="header-wrap">
+            <div class="top-container">
+                <div class="fluid-container">
+                    <div class="nav-bar-holder">
+                        <div class="left-element">
+                            <div class="socials">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right-element">
+                            <div class="header-actions">
+                                <div class="search-container">
+                                    <form action="/search" method="get" class="search-form">
+                                        <input type="search" id="header-search" name="q" placeholder="Search books..." class="search-input">
+                                        <button type="submit" class="search-button">
+                                            <i class="fas fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
+
+                                <div class="cart-container">
+                                    <a href="cart.html" class="cart-link">
+                                        <i class="fas fa-shopping-cart"></i> 
+                                        <span class="cart-count">0</span>
+                                    </a>
+                                </div>
+
+                                <div class="account-popover-container">
+                                    <button type="button" class="account-icon-toggle" id="account-toggle-btn">
+                                        <i class="fas fa-user"></i>
+                                        <span class="account-word">Account</span>
+                                    </button>
+                                    
+                                    <div class="popover-content" id="account-popover">
+                                        <p class="user-greeting">Hi, User!</p> 
+                                        
+                                        <a href="#" class="popover-button manage-btn">Manage your Account</a>
+                                        
+                                        <div class="popover-actions">
+                                            <a href="login.html" class="action-link log-in-link">Login</a>
+                                            <a href="register.html" class="action-link sign-in-link">Sign-Up</a>
+                                        </div>
+                                        
+                                        <div class="popover-footer">
+                                            <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <header>
+            <div class="logo-container">
+                <a href="index.html">
+                    <img src="../Assets/inkwell_logo.png" alt="Inkwell Book Store Logo" class="logo">
+                </a>
+            </div>
+            <div class="fluid-container">
+                <div class="nav-bar-holder">
+                    <div class="nav-bar">
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Books</a></li>
+                                <li><a href="checkout.html"> Checkout</a></li>
+                                <li><a href="about-us.html">About Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <canvas id="logoCanvas" width="400" height="150"></canvas>
+        
+        <div class="main-automatic-slider hidden">
+            <div class="slider-track">
+                
+                <div class="slide"
+                    data-title="White Bird" 
+                    data-author="R.J. Palacio" 
+                    data-price="22.99" 
+                    data-img="../Assets/white-bird.jpg">
+
+                    <div class="slide-content">
+                        <h1>White<br>Bird</h1>
+                        <p>From the bestselling author of Wonder comes the graphic novel White Bird: 
+                            soon to be a major film starring Ariella Glaser, Orlando Schwerdt, Bryce Gheisar, 
+                            Helen Mirren and Gillian Anderson.</p>
+                        <a href="products.html#white-bird" class="read-more-btn">
+                            READ MORE <span>&rarr;</span>
+                        </a>
+                        <button class="add-to-cart-btn">
+                            ADD TO CART <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="../Assets/white-bird.jpg" alt="Book cover: White Bird">
+                    </div>
+                </div>
+
+                <div class="slide"
+                    data-title="Slaves of Socorro" 
+                    data-author="John Flanagan" 
+                    data-price="18.99" 
+                    data-img="../Assets/brotherband-slaves-of-socorro.jpg">
+
+                    <div class="slide-content">
+                        <h1>Slaves of<br>Socorro<br>(Brotherband<br>Book 4)</h1>
+                        <p>The Slaves of Socorro is the fourth book in the Brotherband series, 
+                            from the author of the internationally bestselling Ranger's Apprentice.
+                            When the Heron brotherband become the Skandian duty ship to the Kingdom of Araluen, 
+                            they're excited at the challenges ahead.</p>
+                        <a href="products.html#brotherband-slaves-of-socorro" class="read-more-btn">
+                            READ MORE <span>&rarr;</span>
+                        </a>
+                        <button class="add-to-cart-btn">
+                            ADD TO CART <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="../Assets/brotherband-slaves-of-socorro.jpg" alt="Book cover: Slaves of Socorro">
+                    </div>
+                </div>
+
+                <div class="slide"
+                    data-title="Eragon" 
+                    data-author="Christopher Paolini" 
+                    data-price="24.99" 
+                    data-img="../Assets/eragon.jpg">
+
+                    <div class="slide-content">
+                        <h1>Eragon:<br>Book One</h1>
+                        <p>When Eragon finds a polished stone in the forest, he thinks it is the lucky discovery of a poor farm boy; 
+                            perhaps it will buy his family meat for the winter. But when the stone brings a dragon hatchling, 
+                            Eragon soon realizes he has stumbled upon a legacy nearly as old as the Empire itself.
+                            Overnight his simple life is shattered and he is thrust into a perilous new world of destiny, magic and power.</p>
+                        <a href="products.html#eragon" class="read-more-btn">
+                            READ MORE <span>&rarr;</span>
+                        </a>
+                        <button class="add-to-cart-btn">
+                            ADD TO CART <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="../Assets/eragon.jpg" alt="Book cover: Eragon Book One">
+                    </div>
+                </div>
+                
+                <div class="slide"
+                    data-title="The Da Vinci Code" 
+                    data-author="Dan Brown" 
+                    data-price="19.99" 
+                    data-img="../Assets/the-davinci-code.jpg">
+
+                    <div class="slide-content">
+                        <h1>The Davinci<br>Code</h1>
+                        <p>If I die, the truth will be lost for ever . . . I must pass on the secret. 
+                            History professor Robert Langdon receives an urgent late-night phone call while on business in France: 
+                            the curator of the Louvre in Paris has been brutally murdered inside the museum.
+                        </p>
+                        <a href="products.html#da-vinci-code" class="read-more-btn">
+                            READ MORE <span>&rarr;</span>
+                        </a>
+                        <button class="add-to-cart-btn">
+                            ADD TO CART <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="../Assets/the-davinci-code.jpg" alt="Book cover: The Davinci Code">
+                    </div>
+                </div>
+
+                <div class="slide" 
+                    data-title="The Other Side of Truth" 
+                    data-author="Beverley Naidoo" 
+                    data-price="15.99" 
+                    data-img="../Assets/the-other-side-of-truth.jpg">
+                    <div class="slide-content">
+                        <h1>The Other<br>Side of<br>Truth</h1>
+                        <p>Not a speck, not a stain on her gray school skirt and blue blouse to show what terrible thing had happened . . . 
+                            If only by putting on something fresh and new, they could begin the day again.
+                            When twelve-year-old Sade's mother is killed, she and her little brother 
+                            Femi are forced to flee from their home in Nigeria to Britain.
+                        </p>
+                        <a href="products.html#the-other-side-of-truth" class="read-more-btn">
+                            READ MORE <span>&rarr;</span>
+                        </a>
+                        <button class="add-to-cart-btn">
+                            ADD TO CART <i class="fas fa-shopping-cart"></i>
+                        </button>
+                    </div>
+                    <div class="slide-image">
+                        <img src="../Assets/the-other-side-of-truth.jpg" alt="Book cover: The Other Side of Truth">
+                    </div>
+                </div>
+
+            </div> <button class="slider-nav prev" id="slider-prev">&lsaquo;</button>
+            <button class="slider-nav next" id="slider-next">&rsaquo;</button>
+
+        </div> 
+        <footer>
+            <div class="footer-container">
+                <div class="footer-col about-col">
+                    <h3>Inwell Book Store</h3>
+                    <p>Discover a curated collection of literary works from around the world. We are committed to fostering a love for reading in our community.</p>
+                </div>
+                
+                <div class="footer-col links-col">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="about-us.html#contact">Contact Us</a></li>
+                        <li><a href="#">Shipping & Returns</a><span class="jm-crucial">(Crucial for JM Users)</span></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col payment-social-col">
+                    <div class="social-icons-footer">
+                        <h3>Stay Connected</h3>
+                        <a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/luccent_l" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                    
+                    <div class="payment-methods">
+                        <h3>Payment Methods</h3>
+                        <i class="fab fa-cc-visa"></i>
+                        <i class="fab fa-cc-paypal"></i>
+                        <i class="fas fa-money-check-alt" title="Local Bank Transfer"></i>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Inwell Book Store. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="popover.js"></script> 
+        <script src="canvas-logo.js"></script>
+        <script src="slider.js"></script>
+        <script src="auth-guard.js"></script>
+        <script src="cart-manager.js"></script>
+        <script src="search.js"></script>
+    </body>
+</html>

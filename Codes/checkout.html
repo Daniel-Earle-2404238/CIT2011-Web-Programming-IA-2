@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Inwell Book Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="header-wrap">
+        <div class="top-container">
+            <div class="fluid-container">
+                <div class="nav-bar-holder">
+                    <div class="left-element">
+                        <div class="socials">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-element">
+                        <div class="header-actions">
+                            <div class="search-container">
+                                <form action="/search" method="get"><input type="search" placeholder="Search books..." class="search-input"><button type="submit" class="search-button"><i class="fas fa-search"></i></button></form>
+                            </div>
+                            <div class="cart-container">
+                                <a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span></a>
+                            </div>
+                            <div class="account-popover-container">
+                                <button type="button" class="account-icon-toggle" id="account-toggle-btn"><i class="fas fa-user"></i> <span class="account-word">Account</span></button>
+                                <div class="popover-content" id="account-popover">
+                                    <p class="user-greeting">Hi, User!</p>
+                                    <a href="#" class="popover-button manage-btn">Manage your Account</a>
+                                    <div class="popover-actions">
+                                        <a href="login.html" class="action-link log-in-link">Login</a>
+                                        <a href="register.html" class="action-link sign-in-link">Sign-Up</a>
+                                    </div>
+                                    <div class="popover-footer"><a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html"><img src="../Assets/inkwell_logo.png" alt="Inwell Book Store Logo" class="logo"></a>
+        </div>
+        <div class="fluid-container">
+            <div class="nav-bar-holder">
+                <div class="nav-bar">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Books</a></li>
+                            <li><a href="checkout.html">Checkout</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+        <h1 class="checkout-title">Checkout</h1>
+
+        <div class="checkout-container">
+
+            <div class="forms">
+
+                <div class="form-section">
+                    <h2>1. Contact Information</h2>
+                    <div class="form-grid">
+                        <div class="form-group"><label>Email Address</label><input type="email" required></div>
+                        <div class="form-group"><label>Phone Number</label><input type="tel"></div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>2. Shipping Address (Jamaica only)</h2>
+                    <div class="form-grid">
+                        <div class="form-group"><label>First Name</label><input type="text" required></div>
+                        <div class="form-group"><label>Last Name</label><input type="text" required></div>
+                        <div class="form-group full"><label>Street Address</label><input type="text" required></div>
+                        <div class="form-group"><label>Parish</label>
+                            <select required>
+                                <option value="">— Select Parish —</option>
+                                <option>Kingston</option><option>St. Andrew</option><option>St. Catherine</option>
+                                <option>Clarendon</option><option>Manchester</option><option>St. Elizabeth</option>
+                                <option>Westmoreland</option><option>Hanover</option><option>St. James</option>
+                                <option>Trelawny</option><option>St. Ann</option><option>St. Mary</option>
+                                <option>Portland</option><option>St. Thomas</option>
+                            </select>
+                        </div>
+                        <div class="form-group"><label>Town / Area</label><input type="text" required></div>
+                        <div class="form-group full"><label>Additional Notes (optional)</label><textarea placeholder="Apartment, gate code, directions, etc."></textarea></div>
+                    </div>
+                </div>
+
+                <div class="form-section">
+                    <h2>3. Payment Method</h2>
+                    <p style="margin-bottom:20px; color:#555;">We currently accept local bank transfer & cash on delivery (Kingston & Montego Bay only).</p>
+                    <div class="form-group">
+                        <label><input type="radio" name="payment" value="bank" checked> Bank Transfer (NCB, Scotiabank, JMMB, Sagicor)</label>
+                        <label><input type="radio" name="payment" value="cod"> Cash on Delivery (Kingston & MoBay only)</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+
+                <div class="cart-items">
+                    <p style="text-align:center; padding: 20px 0; color: #888;">Loading cart...</p>
+                </div>
+
+                <div class="summary-row"><span>Subtotal</span><span>$0.00</span></div>
+                <div class="summary-row"><span>Shipping (island-wide)</span><span>$1,200 JMD</span></div>
+                <div class="summary-row total"><span>Total</span><span>$0.00 USD</span></div>
+
+                <button class="checkout-btn">PLACE ORDER</button>
+                <p class="secure-note"><i class="fas fa-lock"></i> Your information is safe and encrypted</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <h3>Inwell Book Store</h3>
+                <p>Discover a curated collection of literary works from around the world. We are committed to fostering a love for reading in our community.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html#contact">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a><span class="jm-crucial">(Crucial for JM Users)</span></li>
+                </ul>
+            </div>
+            <div class="footer-col payment-social-col">
+                <div class="social-icons-footer">
+                    <h3>Stay Connected</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.pinterest.com/luccent_l" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-check-alt" title="Local Bank Transfer"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Inwell Book Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="popover.js"></script>
+    <script src="auth-guard.js"></script>
+    <script src="cart-manager.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>

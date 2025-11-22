@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | Inwell Book Store</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../Assets/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="header-wrap">
+        <div class="top-container">
+            <div class="fluid-container">
+                <div class="nav-bar-holder">
+                    <div class="left-element">
+                        <div class="socials">
+                            <ul>
+                                <li><a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right-element">
+                        <div class="header-actions">
+                            <div class="search-container">
+                                <form action="/search" method="get" class="search-form">
+                                    <input type="search" id="header-search" name="q" placeholder="Search books..." class="search-input">
+                                    <button type="submit" class="search-button">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+
+                            <div class="cart-container">
+                                <a href="cart.html" class="cart-link">
+                                    <i class="fas fa-shopping-cart"></i> 
+                                    <span class="cart-count">0</span>
+                                </a>
+                            </div>
+
+                            <div class="account-popover-container">
+                                <button type="button" class="account-icon-toggle" id="account-toggle-btn">
+                                    <i class="fas fa-user"></i>
+                                    <span class="account-word">Account</span>
+                                </button>
+                                
+                                <div class="popover-content" id="account-popover">
+                                    <p class="user-greeting">Hi, User!</p> 
+                                    
+                                    <a href="#" class="popover-button manage-btn">Manage your Account</a>
+                                    
+                                    <div class="popover-actions">
+                                        <a href="login.html" class="action-link log-in-link">Login</a>
+                                        <a href="register.html" class="action-link sign-in-link">Sign-Up</a>
+                                    </div>
+                                        
+                                    <div class="popover-footer">
+                                        <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="../Assets/inkwell_logo.png" alt="Inkwell Book Store Logo" class="logo">
+            </a>
+        </div>
+        <div class="fluid-container">
+            <div class="nav-bar-holder">
+                <div class="nav-bar">
+                    <nav>
+                        <ul class="nav-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Books</a></li>
+                            <li><a href="checkout.html"> Checkout</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="cart-main">
+        <h1 class="page-title">Your Cart</h1>
+
+        <div class="container">
+
+            <!-- Cart Items -->
+            <div class="cart-items">
+                <div style="padding:40px; text-align:center;">Loading cart...</div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary">
+                <h2>Order Summary</h2>
+                <div class="summary-row"><span>Subtotal (0 items)</span><span>$00.00</span></div>
+                <div class="summary-row"><span>Shipping (Jamaica)</span><span>$0 JMD</span></div>
+                <div class="summary-row total"><span>Total</span><span>$00.00 USD</span></div>
+
+                <a href="checkout.html"><button class="checkout-btn">PROCEED TO CHECKOUT</button></a>
+                <a href="products.html" class="continue-shopping">← Continue Shopping</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Same Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col about-col">
+                <h3>Inwell Book Store</h3>
+                <p>Discover a curated collection of literary works from around the world. We are committed to fostering a love for reading in our community.</p>
+            </div>
+            <div class="footer-col links-col">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="about-us.html">About Us</a></li>
+                    <li><a href="about-us.html#contact">Contact Us</a></li>
+                    <li><a href="#">Shipping & Returns</a><span class="jm-crucial">(Crucial for JM Users)</span></li>
+                </ul>
+            </div>
+            <div class="footer-col payment-social-col">
+                <div class="social-icons-footer">
+                    <h3>Stay Connected</h3>
+                    <a href="https://www.facebook.com/profile.php?id=61583648147981" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://x.com/luccent_l" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/itz.danni_0/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.pinterest.com/luccent_l" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+                <div class="payment-methods">
+                    <h3>Payment Methods</h3>
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-check-alt"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Inwell Book Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="popover.js"></script>
+    <script src="auth-guard.js"></script>
+    <script src="cart-manager.js"></script>
+    <script src="search.js"></script>
+</body>
+</html>
