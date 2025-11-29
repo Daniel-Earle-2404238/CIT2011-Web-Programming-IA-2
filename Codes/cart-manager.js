@@ -310,9 +310,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateSummaryTotals(subtotal, totalItems);
     }
 
-    // =========================================
-    // NEW FUNCTION: CHECKOUT BUTTON LISTENER
-    // =========================================
     function attachCheckoutListener() {
         const checkoutBtn = document.querySelector('.checkout-btn');
         if (checkoutBtn) {

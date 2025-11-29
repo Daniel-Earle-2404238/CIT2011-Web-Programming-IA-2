@@ -1,6 +1,3 @@
-// ============================================
-// SEARCH.JS - Add this new file
-// ============================================
 document.addEventListener('DOMContentLoaded', function() {
     const searchForms = document.querySelectorAll('.search-container form');
     

@@ -1,8 +1,5 @@
-//==========================================
-// LOGIN.JS - Use this exact code
-// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Target specifically the login form, not the search form
+    // Target specifically the login form
     const loginForm = document.querySelector('.auth-container form');
     
     if (!loginForm) {

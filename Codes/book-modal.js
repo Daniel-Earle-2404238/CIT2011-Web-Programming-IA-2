@@ -1,5 +1,3 @@
-// book-modal.js - Fixed version with working Add to Cart
-
 document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('bookModal');
     const modalClose = document.querySelector('.modal-close');

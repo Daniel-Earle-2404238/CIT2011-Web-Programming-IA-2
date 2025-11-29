@@ -1,6 +1,3 @@
-// ============================================
-// AUTH-GUARD.JS - FIXED (No nav bar changes)
-// ============================================
 const USER_SESSION_KEY = 'inwell_current_user'; 
 const PROTECTED_PAGES = ['cart.html', 'checkout.html'];
 

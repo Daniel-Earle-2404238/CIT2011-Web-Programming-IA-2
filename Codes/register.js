@@ -1,8 +1,5 @@
-// ============================================
-// REGISTER.JS - Use this exact code
-// ============================================
 document.addEventListener('DOMContentLoaded', () => {
-    // Target specifically the register form, not the search form
+    // Target specifically the register form
     const registerForm = document.querySelector('.auth-container form');
     
     if (!registerForm) {
